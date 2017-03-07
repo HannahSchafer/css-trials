@@ -4,70 +4,45 @@
   <head>
     <style>
 
-    .red { 
-        height: 200px;
-        width: 350px;
-        background-color: red;
+    .bar {
+      height: 200px;
+      width: 350px;
+    }
+
+    #red { 
+      
+      background-color: red;
 
     }
 
-    .blue { 
-        height: 200px;
-        width: 350px;
-        background-color: blue;
+    #blue { 
+
+      background-color: blue;
 
     }
 
-    .topleft {
-        height: 100px;
-        width: 100px;
-        background-color: black;
-        display: inline-block;
-        margin: 50px 50px 50px 50px;
+    .box {
+      height: 100px;
+      width: 100px;
+      background-color: black;
+      display: inline-block;
+      margin-left: 50px;
+      margin-top: 50px;
     }
-
-    .topright {
-        height: 100px;
-        width: 100px;
-        background-color: black;
-        display: inline-block;
-        margin: 50px 50px 50px 0px;
-
-    }
-
-    .bottomleft {
-        height: 100px;
-        width: 100px;
-        background-color: black;
-        display: inline-block;
-        margin: 50px 50px 50px 50px;
-    }
-
-    .bottomright {
-        height: 100px;
-        width: 100px;
-        background-color: black;
-        display: inline-block;
-        margin: 50px 50px 50px 0px;
-
-    }
-
 
     body {
-        margin: 0;
+      margin: 0;
     }
 
     </style>
   </head>
 
   <body>
-    <div class="red">
-        <div class="topleft"></div><!-- 
-        --><div class="topright"></div>
-    </div>
-    <div class="blue">
-        <div class="bottomleft"></div><!-- 
-        --><div class="bottomright"></div>
+    <div id="red" class="bar"><div class="box"></div><!-- 
+      --><div class="box"></div></div>
+    <div id="blue" class="bar">
+      <div class="box"></div><!-- 
+      --><div class="box"></div>
     </div>
   </body>
 
